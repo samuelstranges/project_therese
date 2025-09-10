@@ -1,11 +1,9 @@
 ---
-title: Markdown Showcase - How Project Therese Renders Content
-subtitle: A comprehensive look at typography, formatting, and styling features
+title: Markdown Showcase
+subtitle: How Project Therese Renders Content
 date: 2025-09-05
 type: post
 ---
-
-# Markdown Showcase - How Project Therese Renders Content
 
 Project Therese transforms your markdown into beautifully formatted web pages.
 This post showcases how various markdown elements are rendered, demonstrating

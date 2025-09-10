@@ -2,15 +2,15 @@
 const SITE_CONFIG = {
     title: "Project Therese",
     description: "A simple, elegant blog inspired by Project Isidore",
-    baseUrl: "http://host.docker.internal:3000",
+    baseUrl: "https://samuelstranges.github.io/project_therese",
     author: "Project Therese",
     language: "en",
     showFooter: true,
     footer: "Built with Project Therese",
     menu: [
-        { title: "Posts", url: "/recent.html" },
-        { title: "RSS", url: "/rss.xml" },
-        { title: "Contact", url: "/contact.html" },
+        { title: "Documentation", url: "./recent.html" },
+        { title: "RSS", url: "./rss.xml" },
+        { title: "Contact", url: "./contact.html" },
     ],
 };
 
@@ -95,14 +95,15 @@ const createTemplate = (
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title}</title>
-    <link rel="stylesheet" href="/assets/global.css">
-    <link rel="stylesheet" href="/assets/grayscale.min.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/global.css">
+    <link rel="stylesheet" href="./assets/grayscale.min.css">
 </head>
 <body>
     <div class="header-fixed">
         <nav class="navbar">
             <div class="logo">
-                <a href="/">${SITE_CONFIG.title}</a>
+                <a href="./">${SITE_CONFIG.title}</a>
             </div>
             <nav>
                 <ul>
@@ -193,7 +194,7 @@ const generateRecentPosts = (posts) => {
           .map((post) => {
               const date = new Date(post.frontmatter.date);
               const formattedDate = date.toISOString().split("T")[0]; // YYYY-MM-DD format
-              return `<li><a href="/${post.slug}.html">${post.frontmatter.title}</a><span class="timestamp">[${formattedDate}]</span></li>`;
+              return `<li><a href="./${post.slug}.html">${post.frontmatter.title}</a><span class="timestamp">[${formattedDate}]</span></li>`;
           })
           .join("")}
     </ul>

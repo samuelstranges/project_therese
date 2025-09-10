@@ -5,19 +5,15 @@ date: 2025-09-10
 type: page
 ---
 
-# Contact
-
 Have questions about Project Therese? Want to contribute or share feedback?
 GitHub is the place to do it!
 
 ## Get in Touch
 
 - **GitHub Issues**:
-  [Report bugs or request features](https://github.com/samuelstranges/project-therese/issues)
-- **GitHub Discussions**:
-  [General questions and community chat](https://github.com/samuelstranges/project-therese/discussions)
+  [Report bugs or request features](https://github.com/samuelstranges/project_therese/issues)
 - **Pull Requests**:
-  [Contribute code improvements](https://github.com/samuelstranges/project-therese/pulls)
+  [Contribute code improvements](https://github.com/samuelstranges/project_therese/pulls)
 
 ## Contributing
 

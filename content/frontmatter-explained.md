@@ -1,11 +1,9 @@
 ---
-title: Understanding Frontmatter in Project Therese
+title: Frontmatter in Project Therese
 subtitle: How to structure your content with YAML frontmatter
 date: 2025-09-05
 type: post
 ---
-
-# Understanding Frontmatter in Project Therese
 
 Every markdown file in Project Therese starts with frontmatter—a block of YAML
 that tells the system how to handle your content. This post explains how
@@ -57,7 +55,8 @@ type: page  # This makes it a static page
 
 ### date
 
-The publication date in YYYY-MM-DD format. **Required for all content** - the build will fail without a valid date.
+The publication date in YYYY-MM-DD format. **Required for all content** - the
+build will fail without a valid date.
 
 ```yaml
 date: 2025-09-05
@@ -149,13 +148,13 @@ type: page
 
 ### Dating Your Content
 
-Always use the YYYY-MM-DD format for dates. This ensures proper sorting and RSS
-feed generation:
+Always use the `YYYY-MM-DD` format for dates. This ensures proper sorting and
+RSS feed generation:
 
 ```yaml
-date: 2025-09-05  # ✅ Correct
-date: 9/5/2025    # ❌ Wrong format
-date: Sep 5 2025  # ❌ Won't sort properly
+date: 2025-09-05  # ✓ Correct
+date: 9/5/2025    # ✗ Wrong format
+date: Sep 5 2025  # ✗ Won't sort properly
 ```
 
 ## Frontmatter in Action
@@ -189,4 +188,3 @@ a site that's both well-organized and SEO-friendly.
 
 _This post demonstrates `type: post` in action—check your RSS feed and recent
 posts page to see it listed there._
-

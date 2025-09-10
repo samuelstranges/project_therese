@@ -5,20 +5,16 @@ date: 2025-09-10
 type: page
 ---
 
-# Welcome
+# Welcome!
 
-Project Therese is [Project Isidore](https://gitlab.com/bhw/project-isidore)'s
-'little way': a beautiful and elegant design philosophy, made accessible with
-Node.js and Markdown.
+Project Therese is a static site generator inspired by the design of
+[Project Isidore](https://gitlab.com/bhw/project-isidore) - but instead of
+diving deep into Common Lisp web development, it goes the 'little way', using
+Node.js and markdown.
 
-Instead of building the entire site stack with Common Lisp (which is a rabbit
-hole you _NEED_ to
-[read about](https://www.bhw.name/assets/blog/project-isidore-doc.html)),
-Project Therese uses... _checks notes_... npm.
-
-Built with simplicity and aesthetics in mind, it transforms your markdown files
-into beautifully formatted web pages, hopefully making it look like a parish
-bulletin you actually want to read. Perfect for a blog!
+Write markdown, run `npm run build`, get a complete website. No complex
+configuration, no decision fatigue - just elegant simplicity for bloggers who
+want their content to shine.
 
 ## The Philosophy
 
@@ -26,29 +22,36 @@ bulletin you actually want to read. Perfect for a blog!
 - **Minimal configuration** - basic site config, works beautifully out of the
   box
 - **Opinionated beauty** - classical typography over endless customization
-- **Responsive design**: Looks great on desktop and mobile
-- **Batteries included**: RSS and sitemap out of the box
+- **Responsive design** - looks great on desktop and mobile
+- **Batteries included** - RSS and sitemap out of the box
 
 ## Why Project Therese?
 
-While there are many markdown processors, Project Therese focuses on:
+In a world of complex static site generators with hundreds of configuration
+options, Project Therese takes a different approach:
 
-```javascript
-// Clean, semantic HTML output
-const html = marked(markdown, {
-    highlight: function (code, lang) {
-        return hljs.highlight(code, { language: lang }).value;
-    },
-});
-```
+- **Content-first design** - Your writing gets beautiful typography and layout
+  without any design decisions on your part
+- **Zero configuration fatigue** - One build file, sensible defaults, no plugin
+  ecosystem to navigate
+- **Readable codebase** - The entire generator fits in a single file you can
+  understand and modify in an afternoon
+- **Deployment anywhere** - Generate static files that work on any web server,
+  CDN, or hosting platform
+
+Unlike heavyweight frameworks that can generate any type of site, Project
+Therese does one thing exceptionally well: turning markdown into elegant reading
+experiences.
 
 ## Getting Started
 
 Project Therese follows the 'little way' - do small things with great love:
 
+1. Clone the repo:
+   `git clone https://www.github.com/samuelstranges/project_therese.git`
 1. Write your markdown files in the `content/` directory
-2. Run `npm run build` to generate your site
-3. Use `npm run dev` to build and serve locally on port 3000
+1. Run `npm run build` to generate your site
+1. Use `npm run dev` to build and serve locally on port 3000
 
 That's it. Just basic site configuration in build.js, no complex setup, no
 decision fatigue.

@@ -5,7 +5,7 @@
     font-display: swap;
     src:
         local(""),
-        url("/assets/cinzel-v11-latin-regular.woff2") format("woff2");
+        url("./cinzel-v11-latin-regular.woff2") format("woff2");
 }
 @font-face {
     font-family: RoyalInitialen;
@@ -14,7 +14,7 @@
     font-display: swap;
     src:
         local(""),
-        url("/assets/RoyalInitialen.woff2") format("woff2");
+        url("./RoyalInitialen.woff2") format("woff2");
 }
 .header-fixed {
     position: relative;
@@ -43,6 +43,7 @@
     font-weight: 400;
     color: #000;
     text-decoration: none;
+    white-space: nowrap;
 }
 .navbar .logo a:hover {
     color: #000000;
@@ -134,7 +135,6 @@
     .navbar nav li {
         display: block;
         text-align: center;
-        border-top: 1px solid #000000;
     }
     .navbar nav li a {
         display: block;
@@ -213,7 +213,7 @@ body {
     width: 100%;
 }
 ::selection {
-    background: #D6EDFF;
+    background: #d6edff;
 }
 p {
     line-height: 1.5em;
@@ -235,7 +235,7 @@ dl {
 }
 .subtitle {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 0.8em;
     line-height: 1.4;
     font-weight: bold;
     margin: 1em auto;
@@ -510,12 +510,14 @@ p.verse {
 :not(pre) > code {
     padding: 2px 5px;
     margin: auto 1px;
-    border: 1px solid #DDD;
+    border: 1px solid #ddd;
     border-radius: 3px;
     background-clip: padding-box;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     color: #000000;
     font-size: 80%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 .org-src-container {
     border: 1px solid #000000;
@@ -855,7 +857,7 @@ button:disabled {
 pre {
     border: 1px solid #ccc;
     box-shadow: 3px 3px 3px #eee;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     font-family: "Courier New", monospace;
     font-size: 80%;
     margin: 1em auto;

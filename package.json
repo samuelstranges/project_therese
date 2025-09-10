@@ -1,5 +1,5 @@
 {
-    "name": "project-therese",
+    "name": "project_therese",
     "version": "1.0.0",
     "description": "A simple, elegant static site generator inspired by Project Isidore",
     "main": "build.js",

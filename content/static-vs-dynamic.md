@@ -1,11 +1,8 @@
 ---
-title: Static vs Dynamic - Choosing the Right Approach
-subtitle: Why static site generators are having their moment
+title: Why Static?
 date: 2025-09-07
 type: post
 ---
-
-# Static vs Dynamic
 
 The web development world has come full circle. After years of complex content
 management systems and server-side rendering, many developers are returning to
