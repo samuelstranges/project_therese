@@ -145,6 +145,7 @@ const generateRSS = (posts) => {
                 id: `${SITE_CONFIG.baseUrl}/${post.slug}.html`,
                 link: `${SITE_CONFIG.baseUrl}/${post.slug}.html`,
                 description: post.frontmatter.subtitle || "",
+                content: post.html,
                 date: new Date(post.frontmatter.date),
             });
         });
