@@ -19,7 +19,7 @@
         "feed": "^4.2.2",
         "gray-matter": "^4.0.3",
         "highlight.js": "^11.8.0",
-        "jsdom": "^22.1.0",
+        "jsdom": "27.0.1",
         "marked": "^9.1.2",
         "sitemap": "^8.0.0"
     },
